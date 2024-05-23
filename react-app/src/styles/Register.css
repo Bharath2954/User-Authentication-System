@@ -1,0 +1,98 @@
+.registerContainer {
+  text-align: center;
+  padding: 40px;
+  margin: auto; /* Center the container horizontally */
+  width: 95%; /* Increased width */
+  max-width: 800px; 
+  background-color: #1E2029;
+  border-radius: 10px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reg-text {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #EDFF08;
+}
+
+.reg-container-1,
+.reg-container-2 {
+  margin: 20px auto; /* Center the containers horizontally */
+  width: 60%; /* Increased width */
+}
+
+.inp-username,
+.inp-password,
+.inp-firstname,
+.inp-lastname,
+.inp-email,
+.inp-role {
+  display: block;
+  margin: 10px auto; /* Center the inputs horizontally */
+  padding: 10px;
+  width: 90%; /* Increased width */
+  border: 1px solid #A8FE39;
+  border-radius: 5px;
+  background-color: #1E2029;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inp-username::placeholder,
+.inp-password::placeholder,
+.inp-firstname::placeholder,
+.inp-lastname::placeholder,
+.inp-email::placeholder {
+  color: #A8FE39;
+}
+
+.inp-role {
+  color: #A8FE39;
+}
+
+.btn-reg {
+  width: 30%; /* Increased width */
+  padding: 15px 0;
+  background: linear-gradient(45deg, #A8FE39, #EDFF08);
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-reg:hover {
+  background: linear-gradient(45deg, #EDFF08, #A8FE39);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login {
+  color: #A8FE39;
+  text-decoration: none;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .inp-username,
+  .inp-password,
+  .inp-firstname,
+  .inp-lastname,
+  .inp-email,
+  .inp-role {
+    width: 100%; /* Adjusted width for smaller screens */
+  }
+
+  .reg-container-1,
+  .reg-container-2 {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  .btn-reg {
+    width: 50%; /* Increased width for smaller screens */
+  }
+}

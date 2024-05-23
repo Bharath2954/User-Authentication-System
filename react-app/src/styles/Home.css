@@ -1,0 +1,53 @@
+.homeContainer {
+  text-align: center;
+  padding: 40px;
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+  background-color: #1E2029;
+  border: 2px solid #A8FE39; /* Added border */
+  border-radius: 10px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    width: 90%;
+  }
+}
+
+.hm-title {
+  font-size: 2.5em;
+  color: #EDFF08;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.log-btn, .reg-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #A8FE39, #EDFF08);
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.log-btn:hover, .reg-btn:hover {
+  background: linear-gradient(45deg, #EDFF08, #A8FE39);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .log-btn, .reg-btn {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+}

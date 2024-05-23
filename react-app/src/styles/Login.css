@@ -1,0 +1,85 @@
+.loginContainer {
+  text-align: center;
+  padding: 40px;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px; 
+  background-color: #1E2029;
+  border: 2px solid #A8FE39;
+  border-radius: 10px;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.log-text {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #EDFF08;
+}
+
+.log-container-1 {
+  margin-bottom: 30px;
+}
+
+.log-container-2 {
+  margin-top: 20px;
+  padding-top: 2vh ;
+}
+
+.inp-username,
+.inp-password {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 85%; /* Increased width */
+  border: 1px solid #A8FE39;
+  border-radius: 5px;
+  background-color: #1E2029;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.inp-username::placeholder, .inp-password::placeholder {
+  color: #A8FE39;
+}
+
+.btn-log {
+  width: 30%; /* Increased width */
+  padding: 15px 0;
+  background: linear-gradient(45deg, #A8FE39, #EDFF08);
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-log:hover {
+  background: linear-gradient(45deg, #EDFF08, #A8FE39);
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.forget-pass, .register {
+  color: #A8FE39;
+  text-decoration: none;
+  margin: 1vh;
+}
+
+.forget-pass:hover, .register:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .loginContainer {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .inp-username, .inp-password {
+    width: 100%;
+  }
+
+  .btn-log {
+    width: 50%; /* Increased width for smaller screens */
+  }
+}
